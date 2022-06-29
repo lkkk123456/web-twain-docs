@@ -2362,11 +2362,17 @@ Json:
 </div>
 ---
 
-## `GetRawDataAsync()`
+## GetRawDataAsync
 
-Gets the RawData for the specified image captured from camera.
+**Syntax**
 
-``` typescript
+```typescript
+/**
+ * Gets the RawData for the specified image captured from camera.
+ * @param index Specify the image.
+ */
+GetRawDataAsync(index: number):RawData;
+
 interface RawData {
   displayImage:{  //Data of the display image, after filter and crop effects
     data: Blob,
