@@ -2108,11 +2108,11 @@ CreateDocument(documentName:string):Boolean;
 
 <tr>
 <td align="center">not supported  </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
 </tr>
 
 </table>
@@ -2169,11 +2169,11 @@ OpenDocument(documentName:string):Boolean;
 
 <tr>
 <td align="center">not supported  </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
 </tr>
 
 </table>
@@ -2226,11 +2226,11 @@ GetCurrentDocumentName():String;
 
 <tr>
 <td align="center">not supported  </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
 </tr>
 
 </table>
@@ -2305,11 +2305,11 @@ RemoveDocument(documentName:string):Boolean;
 
 <tr>
 <td align="center">not supported  </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
 </tr>
 
 </table>
@@ -2351,11 +2351,11 @@ Json:
 
 <tr>
 <td align="center">not supported  </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
-<td align="center">v17.2+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
+<td align="center">v17.3+ </td>
 </tr>
 
 </table>
