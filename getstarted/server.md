@@ -51,12 +51,18 @@ For how to enable HTTPS, please check out the manual of your webserver.
 
 The global API [ `Dynamsoft.DWT.ResourcesPath` ]({{site.info}}api/Dynamsoft_WebTwainEnv.html#resourcespath) sets a relative or absolute path that tells `DWT` where to look for the resources files at runtime. Its default value is `Resources` which means all these files are put in a directory called *Resources* that is in the same location as the web page on which `DWT` is running. This is the simplest situation possible, in most cases, it's a lot more complicated and you must make sure the correct value is set.
 
-#### How to know ResourcesPath is wrong
-
-When you set `ResourcesPath` wrong, static files such as `dynamsoft.webtwain.install.js` , `dynamsoft.viewer.css` will fail to load and you see 404 errors in the browser console.
 
 #### Using an absolute path
 
 If you wish to use an absolute path instead, such as "https://www.dynamsoft.com/dwt/demo/resources/", this is supported. 
 
 > Note: If you want to use the [Camera module]({{site.indepth}}features/Input.html#use-mediadevices-cameras), please make sure the absolute path stays in the same domain to avoid cross-origin issues.
+
+#### How to know ResourcesPath is wrong
+
+* When you set `ResourcesPath` wrong, static files such as `dynamsoft.webtwain.install.js` , `dynamsoft.viewer.css` will fail to load and you see 404 errors in the browser console.
+* When you facing 404 errors in the browser console, and you cannot set the path in `dynamsoft.webtwain.config.js` at the mean time. You can add the `ResourcesPath` in your Html page with a JavaScript tag (‘Newfolder/ResourcesPath’ as in this case), please click [here]({{site.faq}}change-reference-path.html) for more information.
+
+```
+<script type="text/javascript"> Dynamsoft.DWT.ResourcesPath = "Newfolder/Resources";</script>
+```
