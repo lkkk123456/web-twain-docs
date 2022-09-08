@@ -47,3 +47,57 @@ Modify as below:
 ```javascript
 Dynamsoft.DWT.ResourcesPath = "Newfolder/ResourcesTest";
 ```
+
+### Setting ResourcePath in Main Page JavaScript tag
+
+You can also set `ResourcesPath` in the JavaScript tag:
+
+```javascript
+<script type="text/javascript"> Dynamsoft.DWT.ResourcesPath = "Newfolder/Resources";</script>
+```
+or
+
+```javascript
+<script type="text/javascript"> Dynamsoft.DWT.ResourcesPath = "https://www.dynamsoft.com/dwt/demo/resources";</script>
+```
+
+The complete code has shown as below. (change the path to your own path instead)
+
+```
+<html>
+	
+<head>
+	    <title>Hello World</title>
+	    <script src="Newfolder/Resources/dynamsoft.webtwain.initiate.js"></script>
+	    <script src="Newfolder/Resources/dynamsoft.webtwain.config.js"></script>
+	</head>
+	
+	<body>
+	    <input type="button" value="Scan" onclick="AcquireImage();" />
+	    <div id="dwtcontrolContainer"></div>
+	
+	    <script type="text/javascript">
+	        Dynamsoft.DWT.ResourcesPath = 'Newfolder/Resources';
+          var DWObject;
+	        function Dynamsoft_OnReady() {
+	            DWObject = Dynamsoft.DWT.GetWebTwain('dwtcontrolContainer');
+	        }
+	
+		function AcquireImage() {
+		   if (DWObject) {
+			    DWObject.SelectSource(
+				function() {
+				    DWObject.OpenSource();
+				    DWObject.AcquireImage();
+				},
+				function() {
+				    console.log("SelectSource failed!");
+				});
+		       }
+		   }
+	    </script>
+	</body>
+	
+	</html>
+
+```
